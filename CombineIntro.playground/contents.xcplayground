@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true'>
+    <pages>
+        <page name='1. base'/>
+        <page name='2. errors'/>
+        <page name='3. types'/>
+        <page name='4. subjects'/>
+        <page name='5. vm'/>
+        <page name='6. subscribers with error'/>
+        <page name='7. subscribers without error'/>
+        <page name='8. cancellables'/>
+        <page name='9. backpressure'/>
+        <page name='10. map'/>
+        <page name='11. tryMap'/>
+        <page name='12. flatMap'/>
+        <page name='13. compactMap'/>
+        <page name='14. merge'/>
+        <page name='15. future'/>
+        <page name='16. receive'/>
+        <page name='17. subscribe'/>
+        <page name='18. receive fixed'/>
+        <page name='19. receive not fixed'/>
+        <page name='20. side effects'/>
+        <page name='21. example network'/>
+        <page name='20. example debounce'/>
+        <page name='Untitled Page'/>
+    </pages>
+</playground>

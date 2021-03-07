@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "combine-schedulers",
+        "repositoryURL": "https://github.com/pointfreeco/combine-schedulers",
+        "state": {
+          "branch": null,
+          "revision": "ae2f434e81017bb7de02c168fb0bde83cd8370c1",
+          "version": "0.3.1"
+        }
+      },
+      {
+        "package": "CombineExt",
+        "repositoryURL": "https://github.com/CombineCommunity/CombineExt",
+        "state": {
+          "branch": null,
+          "revision": "5b8a0c0f178527f9204200505c5fefa6847e528f",
+          "version": "1.3.0"
+        }
+      },
+      {
+        "package": "TimelaneCombine",
+        "repositoryURL": "https://github.com/icanzilb/TimelaneCombine",
+        "state": {
+          "branch": null,
+          "revision": "e6837bcbb19332866d5e37d501c05d68fbf985f2",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "TimelaneCore",
+        "repositoryURL": "https://github.com/icanzilb/TimelaneCore",
+        "state": {
+          "branch": null,
+          "revision": "1ce6992ee42d88590d38fe6dceae9b6e2a8f4919",
+          "version": "2.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
