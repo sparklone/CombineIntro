@@ -27,6 +27,7 @@ class SearchController: ObservableObject {
             }
             .lane("result")
             .replaceError(with: nil)
+            .receive(on: DispatchQueue.main)
             .assign(to: &$resultUrl)
     }
 
