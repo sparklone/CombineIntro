@@ -10,8 +10,8 @@ var subscriptions = Set<AnyCancellable>()
     .print("input")
     .flatMap { url in
 //    .flatMap(maxPublishers: .max(1)) { url in
-//        URLSession.shared.dataTaskPublisher(for: url)
-//    }
+        URLSession.shared.dataTaskPublisher(for: url)
+    }
     .map({ $0.response.url })
     .print("output")
     .sink { (completion) in

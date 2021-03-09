@@ -34,7 +34,7 @@ vm.getData()
 
 struct MyView: View {
     @StateObject var vm = ViewModel()
-//    lazy var t = vm.$i.eraseToAnyPublisher()
+    //@State var secondVar: Int = 0
     var body: some View {
         Text("\(vm.i)")
         Button(action: {
@@ -42,8 +42,9 @@ struct MyView: View {
         }, label: {
             Text("Get data")
         })
-//        .onReceive(t, perform: { value in
+//        .onReceive(vm.$i.eraseToAnyPublisher(), perform: { value in
 //            print(value)
+//            secondVar = value
 //        })
     }
 }

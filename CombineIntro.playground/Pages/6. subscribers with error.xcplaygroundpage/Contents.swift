@@ -11,7 +11,9 @@ enum CustomError: Error {
 var store = Set<AnyCancellable>()
 var subjectWithError = CurrentValueSubject<Int, CustomError> (0)
 
-subjectWithError.sink { completion in
+subjectWithError
+    .print("subjectWithError")
+    .sink { completion in
     switch completion {
         case .finished:
             print("success")
@@ -22,8 +24,16 @@ subjectWithError.sink { completion in
     print("value: \(value)")
 }
 
-//subject.sink can't without processing error
+// 1. subject.sink can't without processing error
+
 subjectWithError.send(7)
 subjectWithError.send(completion: .finished)
 subjectWithError.send(8)
-// subjectWithError.assign can't because of error
+
+class T {
+    var i: Int = 0
+}
+
+var t = T()
+// 2. subjectWithError.assign can't because of error
+// subjectWithError.assign(to: \.i, on: t)

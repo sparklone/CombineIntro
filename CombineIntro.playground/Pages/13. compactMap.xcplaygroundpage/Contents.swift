@@ -8,6 +8,10 @@ import Combine
         value % 2 == 0 ? nil : value
     }
     //.compactMap { $0 }
+
+    // strange error
+    //.map(String.init)
+
     .sink { (completion) in
         print(completion)
     } receiveValue: { value in
